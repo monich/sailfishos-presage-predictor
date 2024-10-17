@@ -22,12 +22,10 @@ HEADERS += \
 LIBS += -lpresage -lsqlite3 -lmarisa
 
 CONFIG += link_pkgconfig
-PKGCONFIG += hunspell
+PKGCONFIG += hunspell tinyxml2
 
 DISTFILES += qmldir \
-    rpm/PresagePredictor.yaml \
     qml/PresageInputHandler.qml \
-    rpm/maliit-plugin-presage.yaml \
     rpm/maliit-plugin-presage.changes \
     rpm/maliit-plugin-presage.spec
 
