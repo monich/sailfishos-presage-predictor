@@ -22,7 +22,7 @@ HEADERS += \
 LIBS += -lpresage -lsqlite3 -lmarisa
 
 CONFIG += link_pkgconfig
-PKGCONFIG += hunspell
+PKGCONFIG += hunspell tinyxml2
 
 DISTFILES += qmldir \
     qml/PresageInputHandler.qml \

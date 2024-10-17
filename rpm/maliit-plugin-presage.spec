@@ -19,6 +19,7 @@ BuildRequires:  pkgconfig(Qt5Qml)
 BuildRequires:  pkgconfig(Qt5Quick)
 BuildRequires:  pkgconfig(Qt5DBus)
 BuildRequires:  pkgconfig(sqlite3)
+BuildRequires:  pkgconfig(tinyxml2)
 BuildRequires:  libpresage-devel
 BuildRequires:  libmarisa-devel
 BuildRequires:  hunspell-devel >= 1.5.1
