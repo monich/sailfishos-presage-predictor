@@ -307,5 +307,5 @@ PresagePredictorModel *PresagePredictor::engine() const
 
 void PresagePredictor::log(const QString &log)
 {
-    qDebug() << log;
+    // qDebug() << log;
 }

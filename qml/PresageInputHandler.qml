@@ -115,7 +115,6 @@ InputHandler {
                 Connections {
                     target: thread.engine
                     onPredictionsChanged: {
-                        console.log()
                         predictionList.positionViewAtBeginning()
                     }
                 }
@@ -296,7 +295,6 @@ InputHandler {
     }
 
     function applyPrediction(replacement, index) {
-        console.log("candidate clicked: " + replacement + "\n")
         replacement = replacement + " "
         candidateSpaceIndex = MInputMethodQuick.surroundingTextValid
                 ? MInputMethodQuick.cursorPosition + replacement.length : -1
