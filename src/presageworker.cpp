@@ -127,7 +127,7 @@ void PresageWorker::learn(QString text, QString language)
 
 void PresageWorker::forget(QString word, QString language)
 {
-    qDebug() << "Requesting to forget: " << word << " lang: " << language << " current_lang: " << m_language;
+    // qDebug() << "Requesting to forget: " << word << " lang: " << language << " current_lang: " << m_language;
     // forget only if the language if the same as the current one
     if (m_language == language) {
         m_presage->forget(word.toStdString());

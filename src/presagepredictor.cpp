@@ -254,7 +254,7 @@ void PresagePredictor::setEngineCapitalization(const ShiftState shiftState)
 
 void PresagePredictor::setShiftState(ShiftState shiftState)
 {
-    qDebug() << "PresagePredictor::setShiftState(" << QMetaEnum::fromType<ShiftState>().valueToKey(shiftState) << ")";
+    // qDebug() << "PresagePredictor::setShiftState(" << QMetaEnum::fromType<ShiftState>().valueToKey(shiftState) << ")";
     if (m_shiftState != shiftState) {
         if (m_shiftState == ShiftLatched && shiftState == NoShift &&
             m_wordBuffer.length() == 1  && m_wordBuffer.at(0).isUpper()) {

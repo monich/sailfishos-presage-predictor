@@ -58,7 +58,7 @@ void PresagePredictorModel::reload(const QStringList predictedWords)
 
 void PresagePredictorModel::setCapitalizationMode(CapitalizationMode capitalizationMode)
 {
-    qDebug() << "PresagePredictorModel::setCapitalizationMode" << capitalizationMode;
+    // qDebug() << "PresagePredictorModel::setCapitalizationMode" << capitalizationMode;
     if (m_capitalizationMode != capitalizationMode) {
         m_capitalizationMode = capitalizationMode;
         reload(m_predictedWords);
